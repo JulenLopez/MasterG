@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div id="top"><img id="imgLogo" src="imgs/logo1.png" alt=""></div>
+    <div id="mid">
+         <div id="izq">
+            <div id="regist">
+                <form>
+                    <label class="formulario" for="nombre"> Nombre y Apellido*: <!-- comment -->
+                    <input  id="nombre" name="nombre" type="text" value=""/></label>
+
+                    <label for="correo"> Correo*: <!-- comment -->
+                        <input id="correo" name="correo" type="text" value=""/> </label> 
+
+                    <label for="Pass"> Password*: <!-- comment -->
+                    <input id="Pass" name="contra" type="password" value=""/></label> 
+
+                    <label for="Pass2"> Repetir Password*: 
+                    <input id="Pass2" name="contra2" type="password" value=""/></label> 
+
+                    <label class="sexo1" for="sexo">Sexo:
+                    <input type="radio" name="sexo" class="sexo" value="1"/>Hombre
+                    <input type="radio" name="sexo" class="sexo" value="2"/>Mujer</label>
+
+                    <label for="fecha"> Fecha nacimiento: <!-- comment -->
+                    <input id="fecha" name="fecha" type="date" value=""/> </label> 
+
+                    <label for="direccion"> Dirección: <!-- comment -->
+                    <input id="direccion" name="direccion" type="text" value=""/> </label> 
+
+                    <label for="pais">Pais: 
+                    <select id="pais" name="pais">
+                        <option value="1">España </option>
+                        <option value="2">Francia </option>
+                        <option value="3"> Portugal </option>
+                    </select> </label> 
+
+                    <label for="tarjeta" class="tarjeta"> Tarjeta de credito: <!-- comment -->
+                    <input id="tarjeta" class="tarjeta" name="tarjeta" type="text" value=""/> </label> 
+
+                    <input type="checkbox" name="notificaciones" value="1"/> Activar notificaciones de la pagina <br/>
+                    <input type="checkbox" name="revista" value="2"/> Recepción de la revista digital <br/>
+                    Los campos con * son obligatorios
+                </form>
+            </div>
+        </div>
+        <div id="der">
+          <img id="imgSetup" src="imgs/setup.png" alt="">
+        </div>
+    </div>
+<div id="bot">
+    <label>Copyright © 2022 Master G</label>
+    <label ><a href="">Terminos y condiciones</a></label>
+    <label ><a href="">Enlaces externos</a></label>
+</div>
+</body>
+</html>
