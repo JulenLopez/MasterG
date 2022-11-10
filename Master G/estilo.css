@@ -78,3 +78,9 @@ label{
 .tarjeta{
     display: none;
 }
+
+button{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
