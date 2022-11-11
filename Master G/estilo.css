@@ -13,7 +13,6 @@ body {
     background-color: #302038;
 }
 
-
 #bot {
     width: 100%;
     display: flex;
@@ -24,7 +23,6 @@ body {
     height: 15%;
     background-color: #a50f8d;
 }
-
 
 #mid{
     width: 100%;
