@@ -34,6 +34,7 @@ body {
 }
 
 #izq {
+    
     width: 52%;
     display: flex;
     align-items: center;
@@ -41,6 +42,7 @@ body {
 }
 
 #der {
+    
     width: 48%;
     display: flex;
 
@@ -85,7 +87,36 @@ button{
     align-content: center;
     justify-content: center;
 }
+#alertCentr{
+    flex-wrap: wrap;
+    display: flex;
+position: absolute;
+z-index: 100;
+width: 98%;
+height: 96%;
+border-radius: 15px;
+background-color: rgba(26, 19, 17, 0.534);
+justify-content: center;
+align-content: center;
+}
+#cuadroalt {
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    flex-wrap: wrap;
+    display: flex;
+    width: 40%;
+    background-color: rgb(35, 165, 165);
 
+}
+#alertCentr p{
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+}
+#accept{
+    width: 10%;
+}
 @media only screen and (max-width: 900px) {
 
     #der{
