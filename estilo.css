@@ -5,7 +5,7 @@ body {
 
 }
 
-#top{
+#top {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -24,17 +24,17 @@ body {
     background-color: #a50f8d;
 }
 
-#mid{
+#mid {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
     height: 70%;
-    
+
     background-color: #f794fc;
 }
 
 #izq {
-    
+
     width: 52%;
     display: flex;
     align-items: center;
@@ -42,14 +42,14 @@ body {
 }
 
 #der {
-    
+
     width: 48%;
     display: flex;
 
 }
 
-#imgSetup{
-    width:98%;
+#imgSetup {
+    width: 98%;
 }
 
 #regist {
@@ -61,45 +61,47 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #8c3e85;
-    
+
 }
 
-.fallo{
+.fallo {
     color: red;
     display: flex;
     flex-wrap: nowrap;
 }
 
-label{
+label {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.sexo1{
+.sexo1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
 
-button{
+button {
     display: flex;
     align-content: center;
     justify-content: center;
 }
-#alertCentr{
+
+#alertCentro {
     flex-wrap: wrap;
     display: flex;
-position: absolute;
-z-index: 100;
-width: 98%;
-height: 96%;
-border-radius: 15px;
-background-color: rgba(26, 19, 17, 0.534);
-justify-content: center;
-align-content: center;
+    position: absolute;
+    z-index: 100;
+    width: 98%;
+    height: 96%;
+    border-radius: 15px;
+    background-color: rgba(26, 19, 17, 0.534);
+    justify-content: center;
+    align-content: center;
 }
-#cuadroalt {
+
+#cuadroAlert {
     justify-content: center;
     align-items: center;
     border: solid;
@@ -109,21 +111,28 @@ align-content: center;
     background-color: rgb(35, 165, 165);
 
 }
-#alertCentr p{
+
+#alertCentro p {
     text-align: center;
     width: 100%;
     font-size: 1.2em;
 }
-#accept{
+
+#accept {
     width: 10%;
 }
+
 @media only screen and (max-width: 900px) {
 
-    #der{
+    #der {
         display: none;
     }
-    #der img {display: none;}
-    #izq{
+
+    #der img {
+        display: none;
+    }
+
+    #izq {
         width: 100%;
     }
 }
