@@ -55,7 +55,7 @@ body {
 #regist {
     color: white;
     width: 55%;
-    height: 65%;
+    height: 70%;
     border: solid;
     display: flex;
     align-items: center;
@@ -64,8 +64,15 @@ body {
     
 }
 
+.fallo{
+    color: red;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 label{
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-between;
 }
 
@@ -73,10 +80,6 @@ label{
     display: flex;
     flex-wrap: wrap;
     justify-content:flex-start;
-}
-
-.tarjeta{
-    display: none;
 }
 
 button{
