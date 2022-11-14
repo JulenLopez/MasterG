@@ -1,0 +1,59 @@
+Cuaderno de bitacora de pruebas:
+
+Pruebas contra nombre.
+	->No poner ningun caracter - Error
+	->Solo poner una palabra - Correcto
+	->Poner dos palabras - Correcto
+	->Poner dos palabras con espacios al final y al principio - Correcto(eliminar espacios al principio y final de cadena)
+	->Poner 3 o más palabras - Error
+
+Pruebas contra correo.
+	->No poner ningun caracter - Error
+	->Poner solo una cadena - Error
+	->Poner caracteres y @ - Error
+	->Poner caracteres @ caracteres - Error
+	->Poner caracteres @ . caracteres - Error
+	->Poner caracteres @ caracteres . caracteres>3 - Error
+	->Poner caracteres @ caracteres . caracteres[2,3] n- Correcto
+	->Poner caracteres @ caracteres . caracteres . caracteres[2,3] - Correcto
+
+Pruebas contra contraseña.
+	->No poner ningun caracter - Error
+	->Solo caracteres - Error
+	->Caracteres con numeros - Error
+	->Caracteres en mayuscula y minuscula - Error
+	->Caracteres en mayuscula, minuscula y numeros - Error
+	->Caracteres numeros y caracter especial - Error
+	->Caracteres en mayuscula, minuscula y caracter especial - Error
+	->Numeros y caracter especial - Error
+	->Caracteres en mayuscula, minuscula, numero y caracter especial menos de 8 en total - Error
+	->Caracteres en mayuscula, minuscula, numero y caracter especial mayor o igual de 8 en total - Correcto
+
+Pruebas contra repetir contraseña.
+	->No poner ningun caracter - Error
+	->Poner contraseñas distintas devuelve - Error
+	->Poner contraseñas iguales distintos mayus - Error
+	->Poner la misma contraseña - Correcto
+
+Pruebas calle. Establecido de primeras la forma de introducir los valores(placeHolder).
+	->No poner ningun caracter - Error
+	->Calle/calle y caracteres - Error
+	->N/nº numero - Error
+	->Calle caracteres Nº - Error
+	->caracteres Nº numero - Error
+	->calle caracteres Nº numero - Correcto
+	->/scalle caracteres Nº numero/s - Correcto
+	->calle caracteres Nº 012345 - Error
+	->calle 1 2 3 a b c Nº numero - Error
+	->calle caracteres Nº caracteres - Error
+	->callecaracteres Nº numero - Error
+	->calle caracteres Nºnumero - Correcto
+	->calle - Error
+	->Nº - Error
+
+Pruebas tarjeta.(parchear espacios en blanco o crear - cada 4 caracteres)
+	->4 y 15 numeros - Correcto
+	->5 y 15 numeros - Correcto
+	->no 4 o 5 y 15 numeros - Error
+	->menos de 15 numeros - Error
+	->caracteres - Error
