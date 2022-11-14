@@ -156,17 +156,17 @@ function direccion() {//Función distinta al resto debido al display, tener en c
 function tarjeta() {
     if (regeVisa.test(cajaTarjeta.value.trim())) {
         cajaTarjeta.style.color = "green";
-        falloTarjeta.style.display = "";
+        falloTarjeta.style.display = "none";
         tarjetaOk = true;
         return;
     } else if (regeMastercard.test(cajaTarjeta.value.trim())) {
         cajaTarjeta.style.color = "green";
-        falloTarjeta.style.display = "";
+        falloTarjeta.style.display = "none";
         tarjetaOk = true;
         return;
     } else {
         cajaTarjeta.style.color = "red";
-        falloTarjeta.style.display = "none";
+        falloTarjeta.style.display = "";
         tarjetaOk = false;
         return;
     }
