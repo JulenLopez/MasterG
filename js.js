@@ -29,12 +29,12 @@ const botonAceptar = document.getElementById("botonAceptar");
 
 //Inicialización de variables
 //Cración de las diferentes Regex para tenerlas a mano ante los cambios futuros
-const regeNombre = /^(\w+(\s+\w+)?\s*)$/;
-const regeCorreo = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const regeNombre = /^(\s*\w+(\s+\w+)?\s*)$/;
+const regeCorreo = /^\s*\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const regePass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
 const regeVisa = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
 const regeMastercard = /^(?:5[1-5][0-9]{14})$/;
-const regeDireccion = /Calle\s*(\b\w*\b\s+){1,5}Nº\s*\d{1,5}/i;
+const regeDireccion = /\s*Calle\s*(\b\w*\b\s+){1,5}Nº\s*\d{1,5}/i;
 
 //Variables para la comprobación de los valores correctos, variables opcionales inicializadas a true
 let nombreOk = false;
