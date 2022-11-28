@@ -29,7 +29,7 @@ const botonAceptar = document.getElementById("botonAceptar");
 
 //Inicialización de variables
 //Cración de las diferentes Regex para tenerlas a mano ante los cambios futuros
-const regeNombre = /^(\s*\w+(\s+\w+)?\s*)$/;
+const regeNombre = /^(\s*[a-z]+(\s+[a-z]+)?\s*)$/;
 const regeCorreo = /^\s*\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const regePass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
 const regeVisa = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
