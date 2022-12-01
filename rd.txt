@@ -23,6 +23,10 @@ es algo agresivo y poco agradable. El botón de dentro a posterior nos será út
 para confirmación de correo (Esto último es bastante interesante). 
 
 
+CSS - BootStrap
+
+
+
 JavaScript: 
 
 Principalmente validación de datos, para la gestión de los mismos interesante crear una clase de PHP para enviárselo a la BBDD. 
@@ -40,3 +44,6 @@ Esencialmente las funciones se basan en comprobar las credenciales introducías 
 La función de dirección se diferencia del resto ya que es necesario que muestre u oculte el label de tarjeta. 
 
 El botón de aceptar actualmente no hace nada debido a la falta de elementos!!!! 
+
+
+PHP: 

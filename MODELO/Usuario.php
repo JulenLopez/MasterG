@@ -1,47 +1,70 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+require_once ("Modelo.php");
 
-/**
- * Description of Usuario
- *
- * @author alumno
- */
 class Usuario {
     
-    public $id = 0;
-    public $nick = "";
-    public $foto;
-    public $correo="";
-    public $direccion;
-    public $tarjeta;
-    public $revista;
-    public $sexo;
-    public $fechaNac;
-    public $pais;
-    
-    public function __construct($id, $nick, $foto, $correo, $direccion=null, $tarjeta=null, $revista=null, $sexo=null, $fechaNac=null, $pais=null) {
-        $this->id = $id;
-        $this->nick = $nick;
-        $this->foto = $foto;
-        $this->correo = $correo;
-        $this->direccion = $direccion;
-        $this->tarjeta = $tarjeta;
-        $this->revista = $revista;
-        $this->sexo = $sexo;
-        $this->fechaNac = $fechaNac;
-        $this->pais = $pais;
-    }
-    
-    
+        public $id;
+        public $nick;
+        public $tipo;
+        
+        
+        public function __construct(...$args) {
+            $args = func_get_args();
+            $prop = get_object_vars( $this);
+            current($prop);
+            foreach($args as $value)
+            {
+                $this->{key($prop)}=$value;
+                next($prop);
+            }
 
-        /*public function __construct() {
-        $num_params = func_num_args();
-        $args = func_get_args();
-    }*/
-    //put your code here
+        }
+        
+        public function insertar(){
+            
+            $mod=new Modelo("usuarios");
+            $mod->insertar($this);
+            
+        }
+        public function borrar(){
+            $mod=new Modelo("usuarios");
+            $mod->borrar($this->id);
+            
+        }
+        public function actualizar(){
+            $mod=new Modelo("usuarios");
+            $mod->actualizar($this);
+            
+        }
+        public function cargar(){
+            $mod=new Modelo("usuarios");
+            $mod->select($this->id);
+            
+        }
+        public function getId() {
+            return $this->id;
+        }
+
+        public function getNick() {
+            return $this->nick;
+        }
+
+        public function getTipo() {
+            return $this->tipo;
+        }
+
+        public function setId($id): void {
+            $this->id = $id;
+        }
+
+        public function setNick($nick): void {
+            $this->nick = $nick;
+        }
+
+        public function setTipo($tipo): void {
+            $this->tipo = $tipo;
+        }
+
+
 }
