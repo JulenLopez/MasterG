@@ -1,0 +1,49 @@
+Equipo: 5  
+Nombre empresarial: CheerApp 
+Nombre cliente: Master g 
+
+
+HTML: 
+
+Para el formulario se han procedido a utilizar los siguientes elementos: 
+Nueve Labels para todos los diferentes campos. 
+  ->Siete de ellos tienen en texto plano el campo referenciado, un input y un p no visible para la muestra de error. 
+  ->Uno de los restantes se diferencia por tener tres inputs de tipo radio y el ultimo es un select para seleccionar el país. 
+  ->Podemos destacar que tarjeta no será visible hasta introducir una dirección correcta y que este desaparecerá 
+    si la dirección es introducida incorrectamente después. 
+  ->Tenemos diferentes PlaceHolders para dar ejemplos del formato requerido por los inputs.(Interesante buscar opciones de por ejemplo 
+    con mouseOver mostrar una descripción del formato). 
+
+Dos inputs de tipo checkbox para pedir la autorización de notificaciones y suscripción a la revista digital. 
+
+El botón dedicado para las diferentes especificaciones legales y necesarias para organizar la aplicación.
+
+Alerta de creación o fallo de usuario, custom para dar un toque de esfuerzo y evitar la generalización, nos es útil ya que el alert 
+es algo agresivo y poco agradable. El botón de dentro a posterior nos será útil para en caso de creación lanzar al home o una pagina 
+para confirmación de correo (Esto último es bastante interesante). 
+
+
+CSS - BootStrap
+
+
+
+JavaScript: 
+
+Principalmente validación de datos, para la gestión de los mismos interesante crear una clase de PHP para enviárselo a la BBDD. 
+
+Lo primero que encontramos es la generación de todas las constantes para los elementos del document, regex y booleanas de checkeo. 
+  
+Después tenemos la asignación de eventos ordenada por orden de HTML y en parejas, podría ser interesante crear un array de elementos 
+y hacer un for each para ahorrar código (analizar con el equipo). Algunos elementos como la password de confirmación o los botones 
+no dependen de funciones por la simpleza (No queda muy sucio de esta manera). 
+ 
+Creación de las funciones. Principal problema repetición de las mismas líneas (Necesario brain storm al respecto para eliminar el problema). 
+
+Esencialmente las funciones se basan en comprobar las credenciales introducías e indicar al usuario si son correctas. 
+
+La función de dirección se diferencia del resto ya que es necesario que muestre u oculte el label de tarjeta. 
+
+El botón de aceptar actualmente no hace nada debido a la falta de elementos!!!! 
+
+
+PHP: 

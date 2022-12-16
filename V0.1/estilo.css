@@ -1,37 +1,3 @@
-<<<<<<< HEAD:Master G/CSS/estilo.css
-#videojuegos{
-    min-height: 250px;
-    background-image: url("../imgs/videojuegos.png");
-    background-position: center,center;
-    background-size: cover;
-    /*-webkit-clip-path: polygon(51% 4%, 83% 12%, 100% 43%, 94% 78%, 69% 95%, 33% 95%, 6% 78%, 0% 43%, 19% 15%);*/
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-}
-
-#perifericos{
-    min-height: 250px;
-    background-image: url("../imgs/perifericos.png");
-    background-position: center,center;
-    background-size: cover;
-    /*-webkit-clip-path: polygon(51% 4%, 83% 12%, 100% 43%, 94% 78%, 69% 95%, 33% 95%, 6% 78%, 0% 43%, 19% 15%);*/
-    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-}
-
-#top {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    height: 5%;
-    background-color: #302038;
-    background-image: linear-gradient(#302038, #000000);
-
-}
-
-#imgLogo{
-    size: 50%;
-=======
 body {
     width: 98%;
     height: 625px;
@@ -49,7 +15,6 @@ body {
     flex-wrap: nowrap;
     height: 15%;
     background-color: #302038;
->>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
 }
 
 #bot {
@@ -61,20 +26,6 @@ body {
     justify-content: center;
     height: 15%;
     background-color: #a50f8d;
-<<<<<<< HEAD:Master G/CSS/estilo.css
-    background-image: linear-gradient(#2C323A, #a50f8d);
-}
-
-#mid {
-    font-family: "Lucida Console", "Courier New", monospace;
-    width: 100%;
-    background-color: #000000;
-    background-image: linear-gradient(#000000, #2C323A);
-}
-
-#izq {
-
-=======
 }
 
 <<<<<<<< HEAD:V0.1/estilo.css
@@ -99,7 +50,6 @@ body {
 ========
 
 >>>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
->>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
     width: 52%;
     display: flex;
     align-items: center;
@@ -107,23 +57,15 @@ body {
 }
 
 #der {
-<<<<<<< HEAD:Master G/CSS/estilo.css
-
-=======
 <<<<<<<< HEAD:V0.1/estilo.css
 ========
 
 >>>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
->>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
     width: 48%;
     display: flex;
 
 }
 
-<<<<<<< HEAD:Master G/CSS/estilo.css
-#imgSetup {
-    width: 98%;
-=======
 <<<<<<<< HEAD:V0.1/estilo.css
 #imgSetup{
     width:98%;
@@ -131,7 +73,6 @@ body {
 #imgSetup {
     width: 98%;
 >>>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
->>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
 }
 
 #regist {
@@ -142,30 +83,22 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #8c3e85;
-<<<<<<< HEAD:Master G/CSS/estilo.css
-=======
 <<<<<<<< HEAD:V0.1/estilo.css
     
 }
 
 .fallo{
 ========
->>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
 
 }
 
 .fallo {
-<<<<<<< HEAD:Master G/CSS/estilo.css
-=======
 >>>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
->>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
     color: red;
     display: flex;
     flex-wrap: nowrap;
 }
 
-<<<<<<< HEAD:Master G/CSS/estilo.css
-=======
 <<<<<<<< HEAD:V0.1/estilo.css
 label{
     display: flex;
@@ -181,7 +114,6 @@ label{
 
 button{
 ========
->>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
 label {
     display: flex;
     flex-wrap: wrap;
@@ -195,17 +127,12 @@ label {
 }
 
 button {
-<<<<<<< HEAD:Master G/CSS/estilo.css
-=======
 >>>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
->>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-<<<<<<< HEAD:Master G/CSS/estilo.css
-=======
 <<<<<<<< HEAD:V0.1/estilo.css
 @media only screen and (max-width: 900px) {
 
@@ -215,7 +142,6 @@ button {
     #der img {display: none;}
     #izq{
 ========
->>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
 #alertCentro {
     flex-wrap: wrap;
     display: flex;
@@ -261,10 +187,7 @@ button {
     }
 
     #izq {
-<<<<<<< HEAD:Master G/CSS/estilo.css
-=======
 >>>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
->>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:CSS/estilo.css
         width: 100%;
     }
 }

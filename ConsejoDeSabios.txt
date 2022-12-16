@@ -1,7 +1,16 @@
+<<<<<<< HEAD:Master G/ConsejoDeSabios.txt
 En registro enviar correo de confirmacion.(SMS si se puede)
 Boton de admin
 Restriccion de edad?(16,18) Correo descuento por cumpleaños(Gmail)
 Volcados a la vez de actualizacion
 Programacion de DEMO
 direccion varchar de texto
+=======
+En registro enviar correo de confirmacion.(SMS si se puede)
+Boton de admin
+Restriccion de edad?(16,18) Correo descuento por cumpleaños(Gmail)
+Volcados a la vez de actualizacion
+Programacion de DEMO
+direccion varchar de texto
+>>>>>>> 2ea369d3026138467c2270f2ad86921a228140b3:ConsejoDeSabios.txt
 Constructor por defecto con null a los campos opcionales
