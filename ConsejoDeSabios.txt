@@ -5,3 +5,10 @@ Volcados a la vez de actualizacion
 Programacion de DEMO
 direccion varchar de texto
 Constructor por defecto con null a los campos opcionales
+
+
+Cambios para html y css (1%)
+Compatibilidad de teclado -- sobre todo en el form
+lectura de textos --- ciegos
+color y contraste (modo diurno)
+guardar datos en sesion del browser, esta to guapo
