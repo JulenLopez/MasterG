@@ -6,7 +6,7 @@ class Modelo {
     private $hostname="localhost";
     private $usuario="prueba";
     private $password="prueba";
-    private $basededatos="phpusuarios";
+    private $basededatos="masterg";
     private $conn;
     private $tabla;
     private $lista=array();

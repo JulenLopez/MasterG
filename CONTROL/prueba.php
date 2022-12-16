@@ -1,14 +1,11 @@
 <?php
 
 require_once ("../MODELO/Usuario.php");
-require_once ("../MODELO/Tipo.php");
+    
 
-$U1=new Usuario();
-$U2=new Usuario(3, "Antonio",1);
-$T1=new Tipo(null, "CRISTOBAL");
-$U3=new Usuario(NULL, "PEPE",2);
+$modelo = new Modelo("usuario");
 
-
+var_dump($modelo->select(1)->fetch_assoc());
 
 //$U2->insertar();
 //$T1->insertar();
