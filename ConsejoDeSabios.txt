@@ -12,3 +12,5 @@ Compatibilidad de teclado -- sobre todo en el form
 lectura de textos --- ciegos
 color y contraste (modo diurno)
 guardar datos en sesion del browser, esta to guapo
+
+Navbar esta guapo TENER EN CUENTA!!!!

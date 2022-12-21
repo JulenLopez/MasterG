@@ -24,6 +24,14 @@
     background-position: center,center;
 }
 
+#sol{
+   height: 75px;
+   width: 75px; 
+   background-image: url("../imgs/sol.png");
+   background-position: center,center;
+   background-size: cover;
+}
+
 body header {
     width: 100%;
     display: flex;
