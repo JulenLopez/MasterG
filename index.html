@@ -19,15 +19,15 @@
         </div>
     </div>
     <div class="fixed-bottom row justify-content-end">
-        <button  class="align-self-end col-2 col-sm-1 m-3 img-thumbnail img-fluid" id="sol" alt="Icono Sol para cambio a modo claro" ></button>
+        <button  class="align-self-end col-2 col-sm-1 m-3 img-thumbnail img-fluid" id="botonSol" alt="Icono Sol para cambio a modo claro" ></button>
     </div>
-    <header class="container-fluid">
+    <header class="container-fluid" id="cabeza">
         <div>
             <h1 style="display: none;">Master G, venta de periféricos y video juegos</h1>
             <img class="img-fluid align-self-center" id="imgLogo" src="imgs/logo.png" alt="Logo de la empresa Master G">
         </div>
     </header>
-    <main id="mid" class="container-fluid text-center text-white">
+    <main id="mid" class="container-fluid text-center">
         <section class="row justify-content-around p-2">
             <div class="col-md-4 float-start align-self-center">
                 <h3 class="fw-bold">Quieres los mejores perifericos al mejor precio</h3>
@@ -52,10 +52,74 @@
         <section class="row justify-content-center p-2">
             <button class="col-md-2  btn btn-outline-light fs-2 fw-bold w-auto" id="descuento">Registrate</button>
         </section>
+        <div id="izq" style="display: none;">
+            <div id="regist">
+                <form>
+                    <label for="nombre"> Nombre y Apellido*:&nbsp
+                        <input id="nombre" name="nombre" type="text" value="" placeholder="Nombre Apellido" required />
+                        <p id="falloNombre" class="fallo" style="display: none;">Introduzca solo el nombre y el primer
+                            apellido</p>
+                    </label>
+          
+                    <label for="correo"> Correo*:
+                        <input id="correo" name="correo" type="text" value="" placeholder="Example@example.ex"
+                            required />
+                        <p id="falloCorreo" class="fallo" style="display: none;">Correo electronico invalido</p>
+                    </label>
+          
+                    <label for="pass"> Contraseña*:
+                        <input id="pass" name="contra" type="password" value="" placeholder="Contra1@" required />
+                        <p id="falloPass" class="fallo" style="display: none;">Contraseña demasiado debil. Ocho
+                            caracteres minimo</p>
+                    </label>
+          
+                    <label for="pass2"> Repetir contraseña*:
+                        <input id="pass2" name="contra2" type="password" value="" required />
+                        <p id="falloPass2" class="fallo" style="display: none;">Las contraseñas no coinciden</p>
+                    </label>
+          
+                    <label class="sexo1" for="sexo">Sexo:
+                        <input type="radio" name="sexo" class="sexo" value="1" />Hombre
+                        <input type="radio" name="sexo" class="sexo" value="2" />Mujer
+                        <input type="radio" name="sexo" class="sexo" value="3" />Otro</label>
+          
+                    <label for="fecha"> Fecha nacimiento:
+                        <input id="fecha" name="fecha" type="date" value="" />
+                    </label>
+          
+                    <label for="direccion"> Dirección:
+                        <input id="direccion" name="direccion" type="text" value="" placeholder="Calle nombre Nº0" />
+                        <p id="falloDireccion" class="fallo" style="display: none;">Dirección introducida incorrecta</p>
+                    </label>
+          
+                    <label for="tarjeta" id="labelTarjeta" class="tarjeta" style="display: none;"> Tarjeta de credito:
+                        <input id="tarjeta" class="tarjeta" name="tarjeta" type="text" value=""
+                            placeholder="0000 0000 0000 0000" />
+                        <p id="falloTarjeta" class="fallo" style="display: none;">Formato de la tarjeta incorrecto</p>
+                    </label>
+          
+                    <label for="pais">Pais:
+                        <select id="pais" name="pais">
+                            <option value="1">España</option>
+                            <option value="2">Francia</option>
+                            <option value="3">Portugal</option>
+                            <option value="4">Alemania</option>
+                            <option value="5">Reino Unido</option>
+                        </select>
+                    </label>
+          
+                    <input type="checkbox" name="notificaciones" value="1" /> Activar notificaciones de la pagina <br />
+                    <input type="checkbox" name="revista" value="2" /> Recepción de la revista digital <br />
+                    Los campos con * son obligatorios
+                    <br />
+                    <button type="button" id="botonEnviar">Crear usuario</button>
+                </form>
+            </div>
+          </div>
     </main>
     
-    <footer>
-        <p class="text-white m-0 p-0">Copyright © 2022 Master G</p>
+    <footer id="pie">
+        <p class="m-0 p-0">Copyright © 2022 Master G</p>
         <p class="m-0 p-0"><a href="">Terminos y condiciones</a></p>
         <p class="m-0 p-0"><a href="">Enlaces externos</a></p>
     </footer>
