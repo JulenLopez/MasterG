@@ -113,7 +113,7 @@ function cambioColor(){
         colorTop.style.backgroundImage="linear-gradient(#302038, #000000)";
         colorMid.style.backgroundImage="linear-gradient(black, #2C323A)";
         colorBot.style.backgroundImage="linear-gradient(#2C323A, #a50f8d)";
-        botonSol.style.backgroundImage="url('../imgs/sol.png')";
+        botonSol.style.backgroundImage="url('./imgs/sol.png')";
         botonSol.style.backgroundColor="white";
     }else{
         colorMid.style.backgroundColor="white";
@@ -122,7 +122,7 @@ function cambioColor(){
         colorTop.style.backgroundImage="linear-gradient(#302038, wheat)";
         colorMid.style.backgroundImage="linear-gradient(wheat, white)";
         colorBot.style.backgroundImage="linear-gradient(white, #a50f8d)";
-        botonSol.style.backgroundImage="url('../imgs/luna.png')";
+        botonSol.style.backgroundImage="url('./imgs/luna.png')";
         botonSol.style.backgroundColor="black";
     }
 
