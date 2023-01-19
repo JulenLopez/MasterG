@@ -83,10 +83,12 @@ botonEnviar.addEventListener("click", function () {
     if (nombreOk && correoOk && passOk && pass2Ok && direccionOk && tarjetaOk) {
         alertTexto.innerHTML = "Usuario creado";
         alertCentro.style.display = "";
+        document.getElementById("botonAceptar").focus();
         //TODO Crear un objeto con la información del formulario para poder enviarlo contra la BBDD cuando se implemente
     } else {
         alertTexto.innerHTML = "Todos los campos obligatorios deben estar rellenados y correctos";
         alertCentro.style.display = "";
+        document.getElementById("botonAceptar").focus();
     }
 }, false);
 
