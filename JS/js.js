@@ -14,6 +14,7 @@ const labelTarjeta = document.getElementById("labelTarjeta");
 const alertCentro = document.getElementById("alertCentro");
 const cuadroAlert = document.getElementById("cuadroAlert");
 const alertTexto = document.getElementById("alertTexto");
+const divIzq = document.getElementById("izq");
 
 //Diferentes p para argumentar los fallos del usuario
 const falloNombre = document.getElementById("falloNombre");
@@ -26,7 +27,7 @@ const falloTarjeta = document.getElementById("falloTarjeta");
 //Botones de html
 const botonEnviar = document.getElementById("botonEnviar");
 const botonAceptar = document.getElementById("botonAceptar");
-const botonSol = document.getElementById("botonSol");
+const botonDescuento = document.getElementById("descuento");
 
 //Inicialización de variables
 //Cración de las diferentes Regex para tenerlas a mano ante los cambios futuros
@@ -88,47 +89,20 @@ botonEnviar.addEventListener("click", function () {
         alertCentro.style.display = "";
     }
 }, false);
+
 botonAceptar.addEventListener("click", function () {
     //TODO Redirigir al home page
 }, false);
 
-botonSol.addEventListener("click", (event) => { cambioColor(); })
+botonDescuento.addEventListener("click",function(){
+    divIzq.style.display="";
+
+},false)
 
 //Creación de funciones. 
 //TODO Interesante crear una función para todos debido a la alta repetición de código 
 //Dar una vuelta para comprobar asequibilidad 
 //Eliminación de más del 50% de líneas de las funciones 
-function cambioColor(){
-    let colorTop = document.getElementById("cabeza");
-    let colorMid= document.getElementById("mid");
-    let colorBot = document.getElementById("pie");
-
-    if(colorMid.style.backgroundColor=="")
-        colorMid.style.backgroundColor="black";
-    
-    if(colorMid.style.backgroundColor!="black"){
-        colorMid.style.backgroundColor="black";
-        colorMid.style.color="white";
-        colorBot.style.color="white";
-        colorTop.style.backgroundImage="linear-gradient(#302038, #000000)";
-        colorMid.style.backgroundImage="linear-gradient(black, #2C323A)";
-        colorBot.style.backgroundImage="linear-gradient(#2C323A, #a50f8d)";
-        botonSol.style.backgroundImage="url('./imgs/sol.png')";
-        botonSol.style.backgroundColor="white";
-    }else{
-        colorMid.style.backgroundColor="white";
-        colorMid.style.color="black";
-        colorBot.style.color="black";
-        colorTop.style.backgroundImage="linear-gradient(#302038, wheat)";
-        colorMid.style.backgroundImage="linear-gradient(wheat, white)";
-        colorBot.style.backgroundImage="linear-gradient(white, #a50f8d)";
-        botonSol.style.backgroundImage="url('./imgs/luna.png')";
-        botonSol.style.backgroundColor="black";
-    }
-
-    return;
-}
-
 function nombre() {
     if (regeNombre.test(cajaNombre.value)) {
         cajaNombre.style.color = "green";
