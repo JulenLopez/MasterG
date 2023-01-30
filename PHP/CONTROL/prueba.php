@@ -1,15 +1,5 @@
-<?php
+require_once './ControlModel.php';
+$mood=new ControlModel();
+print_r($mood->logar("usuario1", "usuario1"));
 
-require_once ("../MODELO/Usuario.php");
-    
-
-$modelo = new Modelo("usuario");
-
-var_dump($modelo->select(1)->fetch_assoc());
-
-//$U2->insertar();
-//$T1->insertar();
-//$U2->cargar();
-//$U2->borrar();
-//$U2->actualizar();
 
