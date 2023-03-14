@@ -14,3 +14,19 @@ color y contraste (modo diurno)
 guardar datos en sesion del browser, esta to guapo
 
 Navbar esta guapo TENER EN CUENTA!!!!
+
+Pagina editar usuario:
+
+<html>
+     <head>
+         <title>title</title>
+     </head>
+     <body>
+         <h1>Editar Usuario</h1>
+         <img src="Img/<?=$user->getImagen()?>"/>
+         <p>Nombre:<?= $user->getNick()?></p>
+         <p>Tipo:<?=$user->getTipo()?></p>
+         <p>Correo:<?= $user->getCorreo()?></p>
+         <button type="submit" name="submit">Editar</button>
+     </body>
+ </html>
