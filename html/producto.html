@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS boostrap min y icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Producto</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <style> 
+    button {
+  
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    }
+    button:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  
+    }
+
+    #imglogo {
+         
+          -webkit-animation-name:val1-duration;
+          animation-name:val1-duration;
+          -webkit-animation-duration:5s;
+          animation-duration:5s;
+        }
+        
+        @-webkit-keyframes val1-duration {
+           0% {transform:rotate(90deg)}
+          100% {transform:rotate(360deg)}
+        }
+        
+        @keyframes val1-duration {
+           0% {transform:rotate(90deg)}
+          100% {transform:rotate(360deg)}
+        }
+    </style>
+
+  <body style="background-image:url(../imgs/wallpapersden.com_ghostrunner-4k-gaming_2048x1152.jpg); width: 100%; height: 100vh; background-size: cover; background-position: center;">
+
+    <!-- Inicio del menu -->
+    
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+        <!-- icono o nombre -->
+        <img id="imglogo" src="../imgs/logo.PNG" class="img-fluid" alt="" style="width: 50px;">
+        <a class="navbar-brand" href="#">
+          <span class="text-warning">Master Gaming</span>
+        </a>
+            
+        <!-- boton del menu -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <!-- elementos del menu colapsable -->
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ofertas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Información
+              </a>
+
+              <ul class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Informacion A</a></li>
+                <li><a class="dropdown-item" href="#">Equipos</a><li>   
+                <li><a class="dropdown-item" href="#">Networking</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          
+
+           
+          
+         <!--boton Login -->
+
+          <form class="d-flex">
+            <button class="btn btn-outline-info d-none d-md-inline-block" type="submit">Registrarse</button>
+            <div class="m-3"></div>
+            <button class="btn btn-outline-warning d-none d-md-inline-block " type="submit">Login</button>
+          </form>
+          
+          
+        </div>
+     
+        </div>  
+      </nav>
+      <section>
+
+        <div class="container-fluid " style="height: 600px;">
+          <div class="row"><div class="col mt-5"></div></div>
+          
+          <div class="row bg-dark align-items-center justify-content-center m-5">
+           <div class="col-xs-10 col-sm-10 col-md text-light">
+                <img src="../imgs/header.jpg" class="img-fluid" alt="imagen">
+           </div>
+           <div class="col text-light">
+            <div class="row"><div class="col mt-5"><h2>Nombre de Juego</h2></div></div>
+                
+            <div class="row"><div class="col mt-5"><h4>Descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corrupti ullam </h4></div></div>
+
+            <div class="row"><div class="col text-end mt-5 mb-5">
+                <button type="button" class="btn btn-success m-2">Añadir al Carrito</button>
+                <button type="button" class="btn btn-success m-2">Comprar</button>
+            </div>
+        </div>
+           </div>
+          </div>
+          <div class="row"><div class="col mt-5"></div></div>
+        </div>
+        
+
+      </section>
+
+
+
+
+      <footer class="bg-dark text-light py-3 mt-5" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Información de contacto</h4>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle 123, Ciudad</li>
+                <li><i class="fas fa-phone"></i> Teléfono: (123) 456-7890</li>
+                <li><i class="fas fa-envelope"></i> Email: mastergaming@empresa.com</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Enlaces rápidos</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Suscríbete a nuestro boletín</h4>
+              <form>
+                <div class="form-group">
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Suscribirse</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+        
+        
+      
+      
+
+
+
+
+
+
+      
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
